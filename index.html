@@ -4,57 +4,120 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jonathan Clark Portfolio</title>
-    <link rel="stylesheet" href="/images/index.css" />
+    <link rel="stylesheet" href="/styles/index.css" />
+    <script
+      src="https://kit.fontawesome.com/c6f714223a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
+    <header class="gray-bg">
       <h1>Jonathan Clark</h1>
       <nav>
-        <i class="fas fa-project-diagram">Projects</i>Projects
-        <i class="fab fa-linkedin">LinkedIn</i>
-        <i class="fab fa-github-square">GitHub</i>
-        <i class="fas fa-id-card-alt">About</i>
-        <i class="fas fa-paper-plane">Contact</i>
+        <a href="#portfolio-section"
+          ><span class="nav-button">
+            <i class="fas fa-project-diagram"></i>Projects
+          </span></a
+        >
+        <a
+          href="https://www.linkedin.com/in/jonathan-clark-38377b46/"
+          target="_blank"
+          ><span class="nav-button"
+            ><i class="fab fa-linkedin"></i>LinkedIn</span
+          ></a
+        >
+        <a href="https://github.com/binkeroni" target="_blank">
+          <span class="nav-button"
+            ><i class="fab fa-github-square"></i>GitHub</span
+          >
+        </a>
+        <a href="#aboutme"
+          ><span class="nav-button"
+            ><i class="fas fa-id-card-alt"></i>About</span
+          ></a
+        >
+        <a href="mailto:jonathanbclark@outlook.com">
+          <span class="nav-button"
+            ><i class="fas fa-paper-plane"></i>Contact</span
+          >
+        </a>
       </nav>
     </header>
     <main>
-      <section class="profile-section">
-        <h2>My Name Is Jonathan Clark</h2>
-        <div>I am a Software Engineer</div>
-        <button>Contact Me</button>
+      <section class="profile-section gray-bg">
+        <div class="profile-section-left">
+          <h2 id="aboutme">I am a Software Engineer</h2>
+          <hr />
+          <h3>About Me</h3>
+
+          <span
+            >I am a perpetual student of code and an avid web developer. Solving
+            problems and creating accessible information is my passion. I love
+            learning new technologies, but spend much of my time mastering the
+            ones I know. When I'm not coding, you can usually find me with my
+            family, gaming, or woodworking.</span
+          >
+          <a href="mailto:jonathanbclark@outlook.com"
+            ><button id="contact-button">Contact Me</button></a
+          >
+        </div>
+        <div class="profile-section-right">
+          <img src="images/profile.jpg" alt="" srcset="" />
+        </div>
       </section>
-      <section class="about-section">
-        <h3>About Me</h3>
-        <div id="problem-solver">I am a problem solver</div>
-        <span
-          >I am a perpetual student of code and an avid web developer. Solving
-          problems and creating accessible information is my passion. I love
-          learning new technologies, but spend much of my time mastering the
-          ones I know. When I'm not coding, you can usually find me with my
-          family, gaming, or woodworking.</span
-        >
-      </section>
-      <section>
-        <h4>My Portfolio</h4>
-        <div class="project-title">
-          Javascript Method Quiz App
-          <div class="tech-icons">
-            <i class="fab fa-js-square"></i>
-            <i class="fab fa-html5"></i>
-            <i class="fab fa-css3-alt"></i>
-          </div>
-          <div class="project-links">
-            <a
-              href="https://binkeroni.github.io/JS-Method-Quiz-App/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Demo</a
-            >
-            <a
-              href="https://github.com/binkeroni/JS-Method-Quiz-App"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Repo</a
+      <!-- <section class="about-section gray-bg">
+        <div class="about-section-left">
+          <img src="images/profile.jpg" alt="" srcset="" />
+        </div>
+        <div class="about-section-right">
+          <h3>About Me</h3>
+          <div id="problem-solver">I am a problem solver</div>
+          <span
+            >I am a perpetual student of code and an avid web developer. Solving
+            problems and creating accessible information is my passion. I love
+            learning new technologies, but spend much of my time mastering the
+            ones I know. When I'm not coding, you can usually find me with my
+            family, gaming, or woodworking.</span
+          >
+        </div>
+      </section> -->
+      <section class="gray-bg" id="portfolio-section">
+        <div class="portfolio-title">
+          <h4>My Portfolio</h4>
+          <hr />
+        </div>
+        <div class="project-block">
+          <div class="project-info">
+            <span class="project-title">Javascript Method Quiz App</span>
+
+            <div class="tech-icons">
+              <i class="fab fa-js-square"></i>
+              <i class="fab fa-html5"></i>
+              <i class="fab fa-css3-alt"></i>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://binkeroni.github.io/JS-Method-Quiz-App/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Demo</a
+              >
+              <a
+                href="https://github.com/binkeroni/JS-Method-Quiz-App"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Repo</a
+              >
+            </div>
+            <span class="project-desc">
+              A quiz app that was designed "reactfully" with dynamic HTML based
+              on the state of the web app. The questions in the app can be
+              updated and all data is dynamically rendered when some button is
+              clicked.</span
             >
           </div>
           <img
@@ -62,19 +125,10 @@
             src="/images/javascript quiz app image.jpg"
             alt="Javascript Methods Quiz App"
           />
-          <span class="project-desc">
-            A quiz app that was designed "reactfully" with dynamic HTML based on
-            the state of the web app. The questions in the app can be updated
-            and all data is dynamically rendered when some button is
-            clicked.</span
-          >
         </div>
       </section>
     </main>
-    <script
-      src="https://kit.fontawesome.com/c6f714223a.js"
-      crossorigin="anonymous"
-    ></script>
+
     <script src="/scripts/index.js"></script>
   </body>
 </html>
