@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  /* border: 1px solid lightgray; */
   color: whitesmoke;
   font-family: 'Open Sans', sans-serif;
 }
@@ -81,7 +80,13 @@ hr {
   margin: 10px auto;
   width: 100%;
 }
-.nav-button {
+
+.contact-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.contact-buttons a {
   justify-content: center;
   align-items: stretch;
   border-radius: 5px;
@@ -91,8 +96,10 @@ hr {
   text-align: center;
   padding: 5px;
   margin: 5px;
-  font-size: 12px;
+  font-size: 20px;
+  flex-grow: 1;
 }
+
 nav {
   display: flex;
   flex-direction: row;
@@ -114,14 +121,12 @@ nav {
 .tech-icons {
   font-size: 30px;
 }
-.project-links {
-  font-size: 20px;
-  background: -webkit-linear-gradient(top left, #00bbff, #0cf7ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 .project-links a:hover {
+  color: #00bbff;
+}
+.project-links a {
   text-decoration: underline;
+  font-size: 20px;
 }
 .project-block {
   display: flex;
