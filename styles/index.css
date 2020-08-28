@@ -246,7 +246,18 @@ nav {
   }
 
   .project-block {
+    height: 450px;
     display: flex;
     flex-direction: row;
+  }
+  .project-block-reverse {
+    height: 450px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .project-info-reverse {
+    width: 25%;
+    text-align: start;
+    padding: 0 0 0 10px;
   }
 }
