@@ -36,7 +36,7 @@ button {
 }
 body {
   background-color: #1f1f1f;
-  padding: 2%;
+  padding: 10px;
   width: 600px;
   margin: auto;
 }
@@ -63,6 +63,7 @@ h3 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-style: italic;
+  font-size: 24px;
 }
 h5,
 h4 {
@@ -73,6 +74,9 @@ h4 {
 
 hr {
   width: 100%;
+}
+span {
+  font-size: 20px;
 }
 .profile-section-right img {
   border-radius: 10px;
@@ -98,6 +102,19 @@ hr {
   margin: 5px;
   font-size: 20px;
   flex-grow: 1;
+}
+header {
+  display: flex;
+  flex-flow: column wrap;
+  width: auto;
+  font-size: 20px;
+  text-align: center;
+  align-items: center;
+}
+
+.nav-button {
+  font-size: 24px;
+  padding: 5px;
 }
 
 nav {
@@ -133,22 +150,6 @@ nav {
   flex-direction: column;
 }
 
-@media only screen and (min-width: 300px) {
-  header {
-    display: flex;
-    flex-flow: column wrap;
-    width: auto;
-    font-size: 20px;
-    text-align: center;
-    align-items: center;
-  }
-  body {
-    width: 600px;
-  }
-  .nav-button {
-    font-size: 20px;
-  }
-}
 @media only screen and (min-width: 900px) {
   .contact-buttons {
     display: flex;
