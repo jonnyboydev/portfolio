@@ -7,8 +7,10 @@ export default function Card({ data }) {
       <div className='card-data'>
         <h1>{data.name}</h1>
         <span>Stack: {data.stack()}</span>
-        <a href={data.repo}>View Repo</a>
-        <a href={data.livelink}>View Live</a>
+        <div className='card-links'>
+          <a href={data.repo}>View Repo</a>
+          <a href={data.livelink}>View Live</a>
+        </div>
         <p>{data.description}</p>
         <p>{data.secondarydescription}</p>
       </div>
