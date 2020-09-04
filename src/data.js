@@ -23,7 +23,7 @@ const projects = [
       'My Clientele is ideal for the fast paced and busy lifestyle you lead, and allows you to keep up-to-date with what places are closed due to things like Covid-19 or renovations with the currently closed feature.',
     image: () => MyClienteleImage,
     stack: () => (
-      <span className='stack'>
+      <span className='card-stack'>
         <DiSass /> <DiReact /> <DiPostgresql /> <DiNodejsSmall />
       </span>
     ),
@@ -38,7 +38,7 @@ const projects = [
       'The app idea came about from years of being in the e-commerce industry and seeing that so many inventory management systems that were affordable for small business, were also incomplete or buggy.',
     image: () => NVNTORYImage,
     stack: () => (
-      <span className='stack'>
+      <span className='card-stack'>
         <DiCss3 /> <DiNodejsSmall /> <DiPostgresql /> <DiReact />
       </span>
     ),
@@ -53,7 +53,7 @@ const projects = [
       'The app is created for people who need review of Javascript Methods. It asks you questions and provides multiple choice answers. It shows if you were correct, and how many you got right. It was built to help me practice JS methods.',
     image: () => QuizAppImage,
     stack: () => (
-      <span className='stack'>
+      <span className='card-stack'>
         <DiCss3 /> <DiJqueryLogo /> <DiJavascript />
       </span>
     ),

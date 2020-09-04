@@ -15,8 +15,20 @@
 }
 .card-links {
   a {
+    font-size: 12px;
     margin: auto 5px;
+    text-decoration: none;
+    color: #fff;
+    padding: 7px;
+    background-color: #333;
+    border-radius: 5px;
   }
+}
+.card-stack {
+  font-size: 20px;
+}
+.card-name {
+  font-size: 25px;
 }
 
 .card-image {
