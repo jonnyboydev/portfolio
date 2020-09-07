@@ -1,0 +1,14 @@
+.about-me-area {
+  background-color: #fff;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  border-radius: 10px;
+  color: #333;
+  img {
+    width: 20%;
+    border-radius: 50%;
+    border: 5px solid #333;
+  }
+}

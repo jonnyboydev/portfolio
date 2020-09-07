@@ -5,7 +5,7 @@ export default function Card({ data }) {
   return (
     <section className='card'>
       <div className='card-data'>
-        <h1 className='card-name'>{data.name}</h1>
+        <h3 className='card-name'>{data.name}</h3>
         <span>Stack: {data.stack()}</span>
         <div className='card-links'>
           <a href={data.repo}>View Repo</a>
