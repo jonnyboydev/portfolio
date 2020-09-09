@@ -6,7 +6,7 @@ function AboutMe() {
   return (
     <div className='about-me-area'>
       <img className='profile-image' src={ProfileImage} alt='Profile' />
-      <h1>Jonathan Clark</h1> <h2>I am a Full Stack Engineer</h2>
+          <h1>Jonathan Clark</h1> <h2>Full Stack Engineer</h2>
       <p>
         I am a perpetual student of code and an avid web developer. Solving
         problems and creating accessible information is my passion. I love
