@@ -4,8 +4,20 @@
 //   margin: 20px auto;
 //   border-radius: 10px;
 // }
+.App {
+  margin-top: -150px;
+}
+.section-title {
+  width: 90%;
+  margin: 30px auto -10px auto;
+  text-align: center;
+  h5 {
+    font-size: 30px;
+    margin: 0;
+  }
+}
 
-.card-area{
-    display: flex;
-    flex-flow: row wrap;
+.card-area {
+  display: flex;
+  flex-flow: row wrap;
 }
