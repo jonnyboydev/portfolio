@@ -6,7 +6,6 @@ import data from "./data";
 import AboutMe from "./components/AboutMe/AboutMe";
 import Landing from "./components/Landing/Landing";
 import Fade from "react-reveal/Fade";
-import { DiWindows } from "react-icons/di";
 
 class App extends React.Component {
   state = {
