@@ -24,7 +24,7 @@ class AboutMe extends React.Component {
           <a href="https://github.com/jonnyboydev" id="github-link">
             <FiGithub />
           </a>
-          <a href="" id="email-link">
+          <a href="mailto:me@jonnyboy.dev" id="email-link">
             <FiAtSign />
           </a>
           <a
