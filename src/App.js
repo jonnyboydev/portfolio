@@ -23,11 +23,15 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <Landing />
+        <div className="landing-info">
+          <Fade slide top when={!this.state.showAboutMe}>
+            <Landing />
+          </Fade>
+        </div>
 
-        {/* <Header /> */}
-        <div className="App">
-          <Fade bottom when={this.state.showAboutMe}>
+        <Fade bottom when={this.state.showAboutMe}>
+          {/* <Header /> */}
+          <div className="App">
             <AboutMe />
             <div className="section-title">
               <h5>My Projects</h5>
@@ -38,8 +42,8 @@ class App extends React.Component {
                 <Card data={project} key={project.name} />
               ))}
             </div>
-          </Fade>
-        </div>
+          </div>
+        </Fade>
       </>
     );
   }

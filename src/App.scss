@@ -5,7 +5,7 @@
 //   border-radius: 10px;
 // }
 .App {
-  margin-top: -150px;
+  margin-top: -450px;
 }
 .section-title {
   width: 90%;
@@ -20,4 +20,18 @@
 .card-area {
   display: flex;
   flex-flow: row wrap;
+}
+.landing-info {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("./assets/images/background-grey.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
