@@ -9,23 +9,26 @@ class AboutMe extends React.Component {
       <div className="about-me-area">
         <img className="profile-image" src={ProfileImage} alt="Profile" />
         <h4>About Me</h4>
-        <p>
-          I am a <strong>positive team player</strong> that also has experience
-          in <strong>management </strong>
-          along with small - medium <strong>business development</strong>. I am
-          <strong> extremely driven</strong> to get the project done right, with
-          an emphasis on
-          <strong> performance</strong> and design. Solving problems and
-          creating accessible information is my passion. I love learning new
-          technologies, but spend much of my time mastering the ones I know.
-        </p>
-        <p>
-          I am looking to join a team of people wanting to create new and
-          exciting products. My strengths are in both front end and back end
-          technologies like NodeJS, SQL and NoSQL, ReactJS, GatsbyJS, Sass,
-          HTML5, CSS3, Javascript, Typescript, and am always striving to learn
-          more languages including Java and GoLang.
-        </p>
+        <div class="about-me-text">
+          <p>
+            I am a <strong>positive team player</strong> that also has
+            experience in <strong>management </strong>
+            along with small - medium <strong>business development</strong>. I
+            am
+            <strong> extremely driven</strong> to get the project done right,
+            with an emphasis on
+            <strong> performance</strong> and design. Solving problems and
+            creating accessible information is my passion. I love learning new
+            technologies, but spend much of my time mastering the ones I know.
+          </p>
+          <p>
+            I am looking to join a team of people wanting to create new and
+            exciting products. My strengths are in both front end and back end
+            technologies like NodeJS, SQL and NoSQL, ReactJS, GatsbyJS, Sass,
+            HTML5, CSS3, Javascript, Typescript, and am always striving to learn
+            more languages including Java and GoLang.
+          </p>
+        </div>
         <div className="my-links">
           <a href="https://github.com/jonnyboydev" id="github-link">
             <FiGithub />

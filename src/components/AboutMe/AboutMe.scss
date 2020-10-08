@@ -18,6 +18,19 @@
     line-height: 25px;
   }
 
+  @media only screen and (min-width: 600px) {
+    .about-me-text {
+      width: 90%;
+      margin: auto;
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    .about-me-text {
+      width: 85%;
+      margin: auto;
+    }
+  }
+
   img {
     // width: 20%;
     // border-radius: 50%;
