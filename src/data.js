@@ -22,7 +22,7 @@ const projects = [
     description:
       "Offroad Swaps is being developed as a place for all offroad enthusiats to offload their new and used parts. Too many times have I heard someone wanting to sell off their old parts to offset the cost of upgraded parts, but they don't want to deal with the larger auction style sites. ",
     secondarydescription:
-      "This app is currently being developed and has a private repo. I will update as soon as I am allowed to. LAST UPDATED OCTOBER 8 2020",
+      "This app is currently being developed and has a private repo. I will update as soon as I am allowed to. LAST UPDATED OCTOBER 22 2020",
     image: () => "N/A",
     stack: () => (
       <span className="card-stack">
