@@ -1,15 +1,20 @@
 import React from "react";
-import ProfileImage from "../../assets/images/profile.jpg";
-import "./AboutMe.scss";
+import Image from "next/image";
+import "./AboutMe.module.scss";
 import { FiGithub, FiAtSign, FiLinkedin, FiTwitter } from "react-icons/fi";
 
 class AboutMe extends React.Component {
   render() {
     return (
       <div className="about-me-area">
-        <img className="profile-image" src={ProfileImage} alt="Profile" />
+        <Image
+          className="profile-image"
+          src="/images/profile.jpg"
+          alt="Profile"
+          unsized
+        />
         <h4>About Me</h4>
-        <div class="about-me-text">
+        <div className="about-me-text">
           <p>
             I am a <strong>positive team player</strong> that also has
             experience in <strong>management </strong>
