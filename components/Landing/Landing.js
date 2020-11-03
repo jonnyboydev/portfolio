@@ -1,5 +1,5 @@
 import React from "react";
-import "./Landing.module.scss";
+import "./Landing.scss";
 
 function Landing() {
   return (

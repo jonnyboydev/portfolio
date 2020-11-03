@@ -1,5 +1,5 @@
 import React from "react";
-import "./Card.module.scss";
+import "./Card.scss";
 import Image from "next/image";
 
 export default function Card({ data }) {

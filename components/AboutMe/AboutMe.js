@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import "./AboutMe.module.scss";
+import "./AboutMe.scss";
 import { FiGithub, FiAtSign, FiLinkedin, FiTwitter } from "react-icons/fi";
 
 class AboutMe extends React.Component {
