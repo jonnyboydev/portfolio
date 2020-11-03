@@ -89,7 +89,7 @@ const links = [
   },
   {
     name: "Contact",
-    link: "mailto:jonathanbclark@outlook.com",
+    link: "mailto:contact@jonnyboy.dev",
   },
 ];
 
