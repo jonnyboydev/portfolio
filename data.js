@@ -19,7 +19,7 @@ const projects = [
   {
     name: "TheGreenHearth",
     repo: "",
-    livelink: "thegreenhearth.com",
+    livelink: "https://www.thegreenhearth.com",
     description:
       "TheGreenHearth is a blog focused on green living and design. Seeing a lack of inspiration when it came to green living, Carina wanted a website to share tips and tricks, and also document turning her house into a greener house.",
     secondarydescription:
