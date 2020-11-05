@@ -23,7 +23,7 @@ const projects = [
     description:
       "TheGreenHearth is a blog focused on green living and design. Seeing a lack of inspiration when it came to green living, Carina wanted a website to share tips and tricks, and also document turning her house into a greener house.",
     secondarydescription:
-      "This project utilizes Wordpress with optimizations to allow much of the site to be delivered by CDN when it can, decreasing page load and increasing SEO rankings. I built the hosting solution and set the site up entirely, the content and design are accredited to the site owner.",
+      "This project utilizes Wordpress with optimizations to allow much of the site to be delivered by CDN when it can, decreasing page load and increasing SEO rankings. I built the hosting solution and set the site up entirely, the content are accredited to the site owner.",
     image: "/images/thegreenhearth.jpg",
     stack: () => (
       <span className="card-stack">
