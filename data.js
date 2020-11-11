@@ -13,9 +13,25 @@ import {
   DiMongodb,
   DiWordpress,
 } from "react-icons/di";
-import { SiRedux } from "react-icons/si";
+import { SiRedux, SiNextDotJs, SiTailwindcss, SiBitcoin } from "react-icons/si";
 
 const projects = [
+  {
+    name: "NextTicker",
+    repo: "https://github.com/jonnyboydev/NextTicker",
+    livelink: "https://next-ticker.binkeroni.vercel.app/",
+    description:
+      "NextTicker is a small project aimed at showing the speed and efficiency of NextJS with live 3rd party data requests.",
+    secondarydescription:
+      "The app is built with NextJS and TailwindCSS and uses the CoinMarketCap free API to gather data. We grab the data then map the response to cards.",
+    image: "/images/nextticker.jpg",
+    stack: () => (
+      <span className="card-stack">
+        <SiNextDotJs /> <SiTailwindcss /> <SiBitcoin /> <DiNodejsSmall />
+      </span>
+    ),
+  },
+
   {
     name: "TheGreenHearth",
     repo: "",
