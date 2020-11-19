@@ -1,74 +1,55 @@
-import Head from "next/head";
+import Head from "next/head"
 //import styles from "../styles/Home.module.css";
-import Image from "next/image";
-import React from "react";
+import Image from "next/image"
 
 // import Header from "../components/Header/Header";
-import Card from "../components/Card/Card";
-import data from "../data";
-import AboutMe from "../components/AboutMe/AboutMe";
-import Landing from "../components/Landing/Landing";
-import Fade from "react-reveal/Fade";
+import Card from "../components/Card/Card"
+import data from "../data"
+import AboutMe from "../components/AboutMe/AboutMe"
+import Landing from "../components/Landing/Landing"
+import Layout, { siteTitle } from "../components/Layout"
+import utilStyles from "../styles/utils.module.scss"
+import { getSortedPostsData } from "../lib/posts"
+import Date from "../components/Date"
 
-class App extends React.Component {
-  state = {
-    showAboutMe: false,
-  };
-  componentDidMount() {
-    window.addEventListener("scroll", (event) => {
-      this.setState({ showAboutMe: true });
-    });
-  }
-  componentWillUnmount() {
-    window.removeEventListener("scroll");
-  }
-
-  render() {
-    return (
-      <>
-        {/* <style JSX>{` */}
-        {/* .html { */}
-        {/* margin: 0; */}
-        {/* padding: 0; */}
-        {/* background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), */}
-        {/* url("/images/background-grey.png"); */}
-        {/* background-size: cover; */}
-        {/* background-repeat: repeat-x; */}
-        {/* } */}
-        {/* `}</style> */}
-        <div
-          style={{
-            margin: "0",
-            padding: "0",
-            background: `linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/background-grey.png")`,
-            backgroundSize: "cover",
-            backgroundRepeat: "repeat-x",
-          }}
-          className="landing-info"
-        >
-          <Fade slide top when={!this.state.showAboutMe}>
-            <Landing />
-          </Fade>
-        </div>
-
-        <Fade bottom when={this.state.showAboutMe}>
-          {/* <Header /> */}
-          <div className="App">
-            <AboutMe />
-            <div className="section-title">
-              <h5>My Projects</h5>
-              <hr />
-            </div>
-            <div className="card-area">
-              {data.projects.map((project) => (
-                <Card data={project} key={project.name} />
-              ))}
-            </div>
-          </div>
-        </Fade>
-      </>
-    );
-  }
+export default function Home({ allPostsData }) {
+  return (
+    <Layout home>
+      <Head>
+        <title>{siteTitle}</title>
+      </Head>
+      <section className={utilStyles.headingMd}>
+        <p>Hello my name is Jonathan Clark</p>
+        <p>
+          (This is a sample website - you’ll be building a site like this on{" "}
+          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
+        </p>
+      </section>
+      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+        <h2 className={utilStyles.headingLg}>Blog</h2>
+        <ul className={utilStyles.list}>
+          {allPostsData.map(({ id, date, title }) => (
+            <li className={utilStyles.listItem} key={id}>
+              <Link href={`/posts/${id}`}>
+                <a>{title}</a>
+              </Link>
+              <br />
+              <small className={utilStyles.lightText}>
+                <Date dateString={date} />
+              </small>
+            </li>
+          ))}
+        </ul>
+      </section>
+    </Layout>
+  )
 }
 
-export default App;
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData()
+  return {
+    props: {
+      allPostsData,
+    },
+  }
+}
